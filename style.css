@@ -88,3 +88,43 @@ nav button {
     background: #ff4b6e;
     color: white;
 }
+.role-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.role-section h2 {
+    font-size: 32px;
+}
+
+
+.roles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.role-card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+.role-card h3 {
+    font-size: 25px;
+}
+
+
+.role-card button {
+    background: #ff4b6e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
