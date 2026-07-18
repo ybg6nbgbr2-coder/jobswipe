@@ -198,3 +198,35 @@ textarea::placeholder {
     transform: translateX(400px) rotate(20deg);
     opacity: 0;
 }
+.match-screen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #ff3b5c, #ff6b6b, #ff9f43);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    z-index: 10;
+    width: 300px;
+    box-shadow: 0 10px 40px rgba(255,70,100,0.5);
+}
+
+.match-screen h1 {
+    color: white;
+}
+
+.match-screen p {
+    color: white;
+    font-size: 18px;
+}
+
+.match-screen button {
+    background: white;
+    color: #ff3b5c;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
