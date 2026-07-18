@@ -108,5 +108,3 @@ window.signup = function() {
     });
 
 };
-
-}
