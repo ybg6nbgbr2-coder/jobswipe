@@ -112,5 +112,7 @@ function signup() {
 const signupBtn = document.getElementById("signupBtn");
 
 if (signupBtn) {
-    signupBtn.addEventListener("click", signup);
+    signupBtn.addEventListener("click", () => {
+        alert("Button clicked!");
+    });
 }
