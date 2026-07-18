@@ -100,7 +100,7 @@ window.signup = function() {
         alert(error.message);
     });
 
-}
+};
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
