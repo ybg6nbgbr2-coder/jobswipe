@@ -230,3 +230,15 @@ textarea::placeholder {
     border-radius: 25px;
     cursor: pointer;
 }
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff3b5c, #ff6b6b, #ff9f43);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.brand-text {
+    font-size: 18px;
+    color: #aaa;
+}
