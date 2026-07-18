@@ -84,7 +84,23 @@ function nextJob() {
 
 
 showJob();
-function signup() {
+window.signup = function() {
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+
+    .then(() => {
+        alert("🔥 Account created!");
+        window.location.href = "login.html";
+    })
+
+    .catch((error) => {
+        alert(error.message);
+    });
+
+}
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
