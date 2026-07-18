@@ -35,15 +35,7 @@ function showJob() {
 
 function likeJob() {
 
-    let card = document.querySelector(".card");
-
-    card.classList.add("swipe-right");
-
-    setTimeout(() => {
-        card.classList.remove("swipe-right");
-        alert("🔥 You applied for " + jobs[currentJob].title);
-        nextJob();
-    }, 400);
+    document.getElementById("matchScreen").style.display = "block";
 
 }
 
