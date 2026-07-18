@@ -35,16 +35,28 @@ function showJob() {
 
 function likeJob() {
 
-    alert("🔥 You applied for " + jobs[currentJob].title);
+    let card = document.querySelector(".card");
 
-    nextJob();
+    card.classList.add("swipe-right");
+
+    setTimeout(() => {
+        card.classList.remove("swipe-right");
+        alert("🔥 You applied for " + jobs[currentJob].title);
+        nextJob();
+    }, 400);
 
 }
 
-
 function skipJob() {
 
-    nextJob();
+    let card = document.querySelector(".card");
+
+    card.classList.add("swipe-left");
+
+    setTimeout(() => {
+        card.classList.remove("swipe-left");
+        nextJob();
+    }, 400);
 
 }
 
