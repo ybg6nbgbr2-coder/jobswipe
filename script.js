@@ -95,20 +95,23 @@ function nextJob() {
 if (document.getElementById("jobTitle")) {
     showJob();
 }
-window.signup = function() {
+function signup() {
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
     createUserWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            alert("🔥 Account created!");
+            window.location.href = "login.html";
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+}
 
-    .then(() => {
-        alert("🔥 Account created!");
-        window.location.href = "login.html";
-    })
+const signupBtn = document.getElementById("signupBtn");
 
-    .catch((error) => {
-        alert(error.message);
-    });
-
-};
+if (signupBtn) {
+    signupBtn.addEventListener("click", signup);
+}
