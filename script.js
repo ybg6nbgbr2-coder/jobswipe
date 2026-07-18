@@ -21,13 +21,21 @@ let jobs = [
 
 let currentJob = 0;
 
+function showJob() {
+    let job = jobs[currentJob];
+
+    document.getElementById("jobTitle").innerHTML = job.title;
+    document.getElementById("company").innerHTML = "Company: " + job.company;
+    document.getElementById("salary").innerHTML = "Salary: " + job.salary;
+    document.getElementById("location").innerHTML = "Location: " + job.location;
+}
+
 function likeJob() {
-    alert("❤️ You liked " + jobs[currentJob].title);
+    alert("❤️ You matched with " + jobs[currentJob].title);
     nextJob();
 }
 
 function skipJob() {
-    alert("❌ You skipped " + jobs[currentJob].title);
     nextJob();
 }
 
@@ -35,7 +43,10 @@ function nextJob() {
     currentJob++;
 
     if (currentJob >= jobs.length) {
-        alert("No more jobs available!");
         currentJob = 0;
     }
+
+    showJob();
 }
+
+showJob();
