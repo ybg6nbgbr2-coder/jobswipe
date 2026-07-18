@@ -124,7 +124,48 @@ nav button {
     background: #ff4b6e;
     color: white;
     border: none;
+    
     padding: 12px 25px;
     border-radius: 25px;
+    cursor: pointer;
+}
+.profile {
+    width: 90%;
+    max-width: 450px;
+    margin: 60px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.profile h1 {
+    color: #ff4b6e;
+    margin-bottom: 25px;
+}
+
+.profile input,
+.profile textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.profile textarea {
+    height: 100px;
+    resize: none;
+}
+
+.profile button {
+    background: #ff4b6e;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 16px;
     cursor: pointer;
 }
