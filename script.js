@@ -5,8 +5,15 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    // paste your Firebase config here
+  apiKey: "AIzaSyAfvX_iWxK5dcbqFM5onp6-WQgjH1ysb1o",
+  authDomain: "jobswipe-d9308.firebaseapp.com",
+  projectId: "jobswipe-d9308",
+  storageBucket: "jobswipe-d9308.firebasestorage.app",
+  messagingSenderId: "95022171668",
+  appId: "1:95022171668:web:bb83caac24ab9630a2c901",
+  measurementId: "G-17YQJ3TF92"
 };
 
 
