@@ -185,3 +185,16 @@ textarea::placeholder {
     box-shadow: 0 10px 40px rgba(255,70,100,0.3);
 }
 }
+.card {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.card.swipe-left {
+    transform: translateX(-400px) rotate(-20deg);
+    opacity: 0;
+}
+
+.card.swipe-right {
+    transform: translateX(400px) rotate(20deg);
+    opacity: 0;
+}
