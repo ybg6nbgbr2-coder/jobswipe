@@ -8,13 +8,13 @@ let jobs = [
     {
         title: "Car Mechanic 🔧",
         company: "Auto Service",
-        salary: "€800/month",
+        salary: "€900/month",
         location: "Pristina"
     },
     {
-        title: "Web Designer 💻",
-        company: "Digital Agency",
-        salary: "€1000/month",
+        title: "Web Developer 💻",
+        company: "Tech Company",
+        salary: "€1200/month",
         location: "Remote"
     }
 ];
@@ -22,31 +22,44 @@ let jobs = [
 let currentJob = 0;
 
 function showJob() {
+
     let job = jobs[currentJob];
 
     document.getElementById("jobTitle").innerHTML = job.title;
-    document.getElementById("company").innerHTML = "Company: " + job.company;
-    document.getElementById("salary").innerHTML = "Salary: " + job.salary;
-    document.getElementById("location").innerHTML = "Location: " + job.location;
+    document.getElementById("company").innerHTML = "🏢 " + job.company;
+    document.getElementById("salary").innerHTML = "💰 " + job.salary;
+    document.getElementById("location").innerHTML = "📍 " + job.location;
+
 }
+
 
 function likeJob() {
-    alert("❤️ You matched with " + jobs[currentJob].title);
+
+    alert("🔥 You applied for " + jobs[currentJob].title);
+
     nextJob();
+
 }
+
 
 function skipJob() {
+
     nextJob();
+
 }
 
+
 function nextJob() {
+
     currentJob++;
 
-    if (currentJob >= jobs.length) {
+    if(currentJob >= jobs.length){
         currentJob = 0;
     }
 
     showJob();
+
 }
+
 
 showJob();
