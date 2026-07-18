@@ -90,7 +90,9 @@ function nextJob() {
 }
 
 
-showJob();
+if (document.getElementById("jobTitle")) {
+    showJob();
+}
 window.signup = function() {
 
     const email = document.getElementById("email").value;
